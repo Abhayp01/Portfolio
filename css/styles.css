@@ -1,0 +1,344 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  overflow: auto;
+  background:linear-gradient(315deg, rgb(44 146 197) 3%, rgb(0 24 69) 32%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  color: wheat;
+  font-family: "Ubuntu";
+}
+
+.sec1{
+  position: relative;
+}
+
+p {
+  color: #ffffff;
+  font-family:"Ubuntu";
+}
+
+/* Headings */
+
+.content {
+  position: relative;
+}
+
+.content h4 {
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-left: 72px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.textimg{
+  display: flex;
+	border-radius: 5px;
+	box-shadow: 0 3px 26px 0 rgba(247, 245, 245, 0.2);
+  background-color: rgba(0, 0, 0, 0.5); /* Set the desired opacity by adjusting the alpha value (0.5 in this example) */
+  padding: 20px;
+}
+
+.txt{
+  border-radius: 15px;
+	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+  background-color: rgba(0, 0, 0, 0.5); /* Set the desired opacity by adjusting the alpha value (0.5 in this example) */
+  padding: 20px;
+  width: 80%;
+
+}
+
+.txt p{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container h1 {
+  color: #fff; /* Set the color of the text within the container */
+}
+
+.container-fluid{
+  padding: 5% 15%;
+}
+
+.colored-section {
+  /* background-color: #504a4b; */
+  color: #fff;
+}
+.contain{
+  position: relative;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 22px 90px 3.5rem;
+}
+
+.navbar-brand {
+  font-family: "Poppins","Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+
+
+
+.img{
+  padding: 16px;
+  border-radius: 50%;
+}
+
+#title {
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 164px;
+  image-rendering: optimizespeed;
+  border-radius: 10px;
+  
+}
+.project{
+  margin:0 auto;
+  padding: 10px;
+  width: 950px;
+  
+}
+.typ1{
+  display: flex;
+  padding: 10px;
+  background-color: #FFF;
+	margin: 80px 10%;
+	padding: 30px 60px;
+	border-radius: 20px;
+	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+.typ2{
+  display: flex;
+  padding: 10px;
+  background-color: #FFF;
+	margin: 80px 10%;
+	padding: 30px 60px;
+	border-radius: 20px;
+	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+
+.proj{
+  width: 200px;
+  height: 167px;
+}
+#skill {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skls{
+  display: flex;
+  padding: 20px;
+  width: 900px;
+  background-color: #fff;
+}
+
+
+.sklsimg{
+  padding: 20px;
+}
+.skls img{
+  width: 100%;
+  object-fit: contain;
+
+}
+
+
+#cpp{
+  width: 100px;
+  margin-top: 20px;
+
+}
+#exp{
+  width: 148px;
+  margin-top: 40px;
+  height: 59px;
+}
+#kot{
+  /* width: 122px; */
+margin-top: 30px;
+}
+#mon{
+  /* width: 122px; */
+margin-top: 40px;
+
+}
+#py{
+  width: 100px;
+  margin-top: 10px;
+}
+
+.footersec{
+  margin-top: 42px;
+}
+
+
+.flex-item {
+  margin: 25px;
+  border-radius: 7px;
+  padding: 4.5em 5em;
+  position: relative;
+  font-weight: 600;
+}
+
+
+
+
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+}
+
+#projects {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: saturate(180%) blur(10px); */
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 80%;
+  min-width: 450px;
+}
+
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project-details {
+  flex: 1;
+  text-align: center;
+}
+
+.project-image {
+  flex: 1;
+  margin-left: 20px;
+  text-align: right;
+}
+
+.project img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #2960a5;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+#f:hover{
+  color:blue;
+}
+#git:hover{
+  color: rgb(0, 0, 0);
+}
+#e:hover{
+  color: white;
+}
+
+#footer{
+  text-align: center;
+}

@@ -542,5 +542,3 @@ if (typeof document !== "undefined") {
   VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
 }
 
-module.exports = VanillaTilt;
-

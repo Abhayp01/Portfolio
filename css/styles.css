@@ -87,7 +87,7 @@ p {
 .txt{
   border-radius: 15px;
 	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
-  background-color: rgba(0, 0, 0, 0.5); /* Set the desired opacity by adjusting the alpha value (0.5 in this example) */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 20px;
   width: 80%;
 
@@ -98,8 +98,35 @@ p {
   text-align: center;
 }
 
+#typed-name{
+  font-size: 3rem;
+  font-family: monospace;
+  color: #004b55;
+}
+
+#cursor {
+  font-size: 3rem;
+  animation: blink 0.7s infinite;
+  color:#038091;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
 .container h1 {
-  color: #fff; /* Set the color of the text within the container */
+  color: #fff; 
 }
 
 .container-fluid{
@@ -107,7 +134,7 @@ p {
 }
 
 .colored-section {
-  /* background-color: #504a4b; */
+ 
   color: #fff;
 }
 .contain{
@@ -195,11 +222,24 @@ p {
   flex-direction: column;
   align-items: center;
 }
+@keyframes gtEgEs {
+  0% {
+    transform: translateX(0px);
+}
+100% {
+  transform: translateX(-2400px);
+}
+  
+}
 .skls{
   display: flex;
   padding: 20px;
   width: 900px;
   background-color: #fff;
+  /* padding: 7px 0px;
+    animation: 40s linear 0s infinite normal none running gtEgEs;
+    display: flex;
+    width: 4800px; */
 }
 
 

@@ -1,3 +1,45 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const name = "Abhay Prajapati."; 
+  const typedName = document.getElementById("typed-name");
+  const cursor = document.getElementById("cursor");
+  const typingSpeed = 150; 
+  const eraseSpeed = 50; 
+  const pauseDuration = 1500; 
+
+  function typeText() {
+    let currentIndex = 0;
+
+    function typeNextCharacter() {
+      if (currentIndex < name.length) {
+        typedName.textContent += name[currentIndex];
+        currentIndex++;
+        setTimeout(typeNextCharacter, typingSpeed);
+      } else {
+        setTimeout(eraseText, pauseDuration);
+      }
+    }
+
+    typeNextCharacter();
+  }
+
+  function eraseText() {
+    let currentIndex = typedName.textContent.length;
+
+    function eraseNextCharacter() {
+      if (currentIndex > 0) {
+        typedName.textContent = typedName.textContent.slice(0, currentIndex - 1);
+        currentIndex--;
+        setTimeout(eraseNextCharacter, eraseSpeed);
+      } else {
+        setTimeout(typeText, typingSpeed);
+      }
+    }
+
+    eraseNextCharacter();
+  }
+
+  typeText(); // Start the animation when the page loads
+});
 'use strict';
 
 var classCallCheck = function (instance, Constructor) {

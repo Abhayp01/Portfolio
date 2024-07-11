@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>AP</title>
@@ -8,12 +7,13 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="code.js"></script>
 
@@ -30,31 +30,25 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-
   <section class="colored-section" id="title">
-
     <div class="sec1">
-
       <!-- Nav Bar -->
-
-      <nav class="navbar navbar-expand-lg navbar-dark">
-
+      <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="">
-          <div class="content">
-            <h4>&ltA.P&gt</h4>
-            <h4>&ltA.P&gt</h4>
+          <div class="content homemade-apple-regular" >
+            <h4 class="dancing-script">&ltA/P&gt</h4>
+            <h4 class="dancing-script">&ltA/P&gt</h4>
           </div>
         </a>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -66,69 +60,81 @@
               <a class="nav-link" href="#footer">Contact Me</a>
             </li>
           </ul>
-
         </div>
       </nav>
-
     </div>
-
   </section>
 
   <div class="container">
     <div class="textimg">
-
       <div class="txt">
-        <p >Hi My name is <span id="typed-name"></span><span id="cursor">|</span></p>
-        <p>Student at NSUT Delhi 3rd Year.</p>
+        <p>Hi, My name is <span id="typed-name"></span><span id="cursor">|</span></p>
+        <p>Student at NSUT Delhi, 3rd Year.</p>
       </div>
-
       <div class="img box" data-tilt>
         <img class="title-image" src="images/ap.jpg" alt="myIMG">
       </div>
-
     </div>
   </div>
 
   <section id="projects">
-    <h2>My Projects</h2>
+    <h2 class="section-heading">Projects</h2>
     <div class="project-container">
       <div class="project">
+        <div class="project-image">
+          <a href="https://github.com/Abhayp01/ShopIT-App" class="btn btn-primary" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img src="images/shopit.jpeg" alt="ShopIT App" data-tilt></a>
+        </div>
         <div class="project-details">
           <h3>ShopIT App</h3>
-          <p>App for IT products detail for consumers</p>
-          <a href="https://github.com/Abhayp01/ShopIT-App">View Project</a>
-        </div>
-        <div class="project-image box" data-tilt>
-          <img src="images/shop.png" alt="Project 1">
+          <!-- <p>App for IT products detail for consumers</p>
+          <a href="https://github.com/Abhayp01/ShopIT-App" class="btn btn-primary">View Project</a> -->
         </div>
       </div>
       <div class="project">
+        <div class="project-image">
+          <a href="https://github.com/Abhayp01/WeatherApp" class="btn btn-primary" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img src="images/aasman.png" alt="Weather App" data-tilt></a>
+        </div>
         <div class="project-details">
           <h3>Weather App</h3>
-          <p>5 days weather forcast</p>
-          <a href="https://github.com/Abhayp01/WeatherApp">View Project</a>
+          <!-- <p>5 days weather forecast</p>
+          <a href="https://github.com/Abhayp01/WeatherApp" class="btn btn-primary">View Project</a> -->
         </div>
-        <div class="project-image box" data-tilt>
-          <img src="images/weather.jpg" alt="Project 2">
+      </div>
+      <div class="project">
+        <div class="project-image" data-tilt-glare data-tilt-max-glare="0.8">
+          <a href="" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img src="images/video_summary.png" alt="Video Summarizer" data-tilt></a>
+        </div>
+        <div class="project-details">
+          <h3>Video Summarizer</h3>
+          <!-- <p>Video summarizer using React and Flask</p>
+          <a href="https://github.com/Abhayp01/VideoSummarizer" class="btn btn-primary">View Project</a> -->
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-image" >
+          <a href="https://github.com/Abhayp01/PhotoMemory" class="btn btn-primary" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img src="images/photo_memory.png" alt="Photo Memory" data-tilt></a>
+        </div>
+        <div class="project-details">
+          <h3>Photo Memory</h3>
+          <!-- <p>Photo Memory using React, MongoDB, and NodeJS</p>
+          <a href="https://github.com/Abhayp01/PhotoMemory" class="btn btn-primary">View Project</a> -->
         </div>
       </div>
     </div>
   </section>
   
-  
-<section id="skill">
-  <h3>skills</h3>
-    <div class="skls">
-      <div class="sklsimg"><img id="cpp" src="images/c++.png" alt=""></div>
-      <div class="sklsimg" ><img id="exp" src="images/express-logo.webp" alt=""></div>
-      <div class="sklsimg" ><img id="kot" src="images/kotlin.png" alt=""></div>
-      <div class="sklsimg"><img id="mon" src="images/mongodb-logo-vector-2022.png" alt=""></div>
-      <div class="sklsimg" ><img id="kot" src="images/reactimg.png" alt=""></div>
-      <div class="sklsimg"><img id="py" src="images/Python-logo-notext.svg.png" alt=""></div>
-      
-    </div>
-</section>
 
+  <section id="skill">
+    <h3>Skills</h3>
+    <div class="skls">
+      <div class="sklsimg"><img id="cpp" src="images/c++.png" alt="C++"></div>
+      <div class="sklsimg"><img id="exp" src="images/express-logo.webp" alt="Express.js"></div>
+      <div class="sklsimg"><img id="kot" src="images/kotlin.png" alt="Kotlin"></div>
+      <div class="sklsimg"><img id="mon" src="images/mongodb-logo-vector-2022.png" alt="MongoDB"></div>
+      <div class="sklsimg"><img id="react" src="images/reactimg.png" alt="React"></div>
+      <div class="sklsimg"><img id="py" src="images/Python-logo-notext.svg.png" alt="Python"></div>
+    </div>
+  </section>
 
   <footer class="white-section" id="footer">
     <div class="container-fluid" class="footersec">
@@ -139,17 +145,14 @@
     </div>
   </footer>
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
   <script type="text/javascript" src="vanilla-tilt.js">
     VanillaTilt.init(document.querySelector(".box"), {
-max: 25,
-speed: 400
-});
+      max: 25,
+      speed: 400
+    });
 
-VanillaTilt.init(document.querySelectorAll(".box"));
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    VanillaTilt.init(document.querySelectorAll(".box"));
+  </script>
 </body>
-
-
 </html>

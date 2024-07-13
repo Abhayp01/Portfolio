@@ -88,28 +88,24 @@ p {
 .textimg {
   display: flex;
   border-radius: 5px;
-  box-shadow: 0 3px 26px 0 rgba(247, 245, 245, 0.2);
-  background-color: rgba(0, 0, 0, 0.5);
+ 
   padding: 20px;
 }
 
 .txt {
   border-radius: 15px;
-  box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   width: 80%;
 }
 
 .txt p {
   font-size: 2rem;
-  text-align: center;
 }
-
 #typed-name {
+  font-weight: 900;
   font-size: 3rem;
-  font-family: monospace;
-  color: #004b55;
+  font-family: Ubuntu;
+  color: brown;
 }
 
 #cursor {
@@ -193,20 +189,6 @@ p {
 }
 
 
-.typ1, .typ2 {
-  display: flex;
-  padding: 10px;
-  background-color: #FFF;
-  margin: 80px 10%;
-  padding: 30px 60px;
-  border-radius: 20px;
-  box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
-}
-/* 
-.proj {
-  width: 200px;
-  height: 167px;
-} */
 
 #skill {
   padding: 50px 0;

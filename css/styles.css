@@ -364,3 +364,153 @@ p {
 #footer {
   text-align: center;
 }
+
+
+.skills-section {
+  padding: 80px 0;
+  /* background-color: #f8f9fa; */
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.skill-category {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.skill-category h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: skyblue;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  /* margin-bottom: 10px; */
+}
+
+.skill-item p {
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  color: #333;
+}
+
+#mongo{
+  border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+  .skill-item {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .skill-item p {
+    font-size: 12px;
+  }
+}
+
+.coding-profiles-section {
+  text-align: center;
+  padding: 80px 0;
+  /* background-color: #ffffff; */
+}
+
+.profiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.profile-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.profile-item p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .profile-item {
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+  }
+  
+  .profile-item img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .profile-item p {
+    font-size: 14px;
+  }
+}

@@ -111,7 +111,7 @@ p {
 #cursor {
   font-size: 3rem;
   animation: blink 0.7s infinite;
-  color: #038091;
+  color: #96c5ff; /* Changed cursor color to be a bit lighter for contrast */
 }
 
 @keyframes blink {
@@ -158,6 +158,7 @@ p {
   font-family: "Ubuntu";
   font-weight: bolder;
   color: white;
+  transition: color 0.3s ease; /* Added transition for hover effect */
 }
 .nav-link:hover{
   color: #96c5ff;
@@ -289,20 +290,25 @@ p {
   /* width: 80%; */
 }
 
+/* **ENHANCED PROJECT CARD STYLES** */
 .project {
-  background: rgba(44, 146, 197, 0.664);
-  padding: 3px;
+  background: rgba(44, 146, 197, 0.75); /* Slightly less transparent */
+  padding: 15px; /* Increased padding */
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for definition */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Stronger initial shadow */
+  transition: all 0.4s ease; /* Transition 'all' for smoothness */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px) scale(1.02); /* Lift up and slightly scale */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7); /* More dramatic hover shadow */
+  background: rgba(50, 160, 210, 0.9); /* Change background color slightly on hover */
 }
+/* **END PROJECT CARD STYLES** */
 
 .project-image {
   margin-bottom: 10px;
@@ -410,9 +416,12 @@ p {
   transition: transform 0.3s ease;
 }
 
+/* **ENHANCED SKILL ITEM HOVER STYLES** */
 .skill-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.05); /* Increased lift and slight scale */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(150, 197, 255, 0.8); /* Added shadow and subtle blue glow */
 }
+/* **END SKILL ITEM HOVER STYLES** */
 
 .skill-item img {
   width: 60px;
@@ -464,6 +473,7 @@ p {
   margin: 0 auto;
 }
 
+/* **ENHANCED CODING PROFILE HOVER STYLES** */
 .profile-item {
   display: flex;
   flex-direction: column;
@@ -480,8 +490,9 @@ p {
 
 .profile-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
 }
+/* **END CODING PROFILE HOVER STYLES** */
 
 .profile-item img {
   width: 80px;

@@ -1,211 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Abhay_Prajapati</title>
+  <title>Abhay Prajapati | Software Engineer</title>
   <meta name="description" content="Hi, I am Abhay Prajapati, a Software Engineer 1 working with .NET C# at Zinnia, and a graduate of Netaji Subhas University of Technology (NSUT) Delhi.">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-
+  
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-
+  
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <section class="colored-section" id="title">
-    <div class="sec1">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="">
-          <div class="content homemade-apple-regular" >
-            <h4 class="dancing-script">&ltA/P&gt</h4>
-            <h4 class="dancing-script">&ltA/P&gt</h4>
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skill">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://drive.google.com/file/d/1Nr3i-iFp5-Ni1eIChs_3qnszPVeY0oHf/view?usp=sharing" target="_blank">Resume</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-glass">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">&lt;A / P&gt;</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#profiles">Profiles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-accent" href="https://drive.google.com/file/d/1Nr3i-iFp5-Ni1eIChs_3qnszPVeY0oHf/view?usp=sharing" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section" id="hero">
+    <div class="container text-center">
+      <img src="images/ap.jpg" alt="Abhay Prajapati" class="profile-image-circle">
+      <h1 class="hero-title">
+        Hi, I'm <span id="typed-name"></span><span id="cursor">|</span>
+      </h1>
+      <p class="hero-subtitle">
+        Software Engineer 1 at <a href="https://zinnia.com/" target="_blank">Zinnia</a> | NSUT Delhi Graduate
+      </p>
     </div>
   </section>
 
-  <div class="container">
-    <div class="textimg">
-      <div class="txt">
-        <p style="text-align: left;">Hi, My name is <span id="typed-name"></span><span id="cursor">|</span></p>
-        
-        <p style="text-align: left;">Software Engineer 1 at <a href="https://zinnia.com/" target="_blank" style="color: #96c5ff; text-decoration: underline;">Zinnia</a>, NSUT Delhi Graduate.</p>
-      </div>
-      <div class="img box" data-tilt>
-        <img class="title-image" src="images/ap.jpg" alt="myIMG">
-      </div>
-    </div>
-  </div>
+  <main>
+    <section id="projects" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-heading">Projects</h2>
+        <div class="row">
+          
+          <div class="col-lg-6 mb-4">
+            <div class="card project-card" data-tilt>
+              <img src="images/shopit.jpeg" class="card-img-top" alt="ShopIT App">
+              <div class="card-body">
+                <h3 class="card-title">ShopIT App</h3>
+                <a href="https://github.com/Abhayp01/ShopIT-App" class="btn btn-sm btn-outline-accent" target="_blank">View on GitHub</a>
+              </div>
+            </div>
+          </div>
 
-  <section id="projects">
-    <h2 class="section-heading">Projects</h2>
-    <div class="project-container">
-      <div class="project">
-        <div class="project-image">
-          <a href="https://github.com/Abhayp01/ShopIT-App" class="btn btn-primary" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img src="images/shopit.jpeg" alt="ShopIT App" data-tilt></a>
-        </div>
-        <div class="project-details">
-          <h3>ShopIT App</h3>
+          <div class="col-lg-6 mb-4">
+            <div class="card project-card" data-tilt>
+              <img src="images/aasman.png" class="card-img-top" alt="Weather App">
+              <div class="card-body">
+                <h3 class="card-title">Weather App</h3>
+                <a href="https://github.com/Abhayp01/WeatherApp" class="btn btn-sm btn-outline-accent" target="_blank">View on GitHub</a>
+              </div>
+            </div>
           </div>
-      </div>
-      <div class="project">
-        <div class="project-image">
-          <a href="https://github.com/Abhayp01/WeatherApp" class="btn btn-primary" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img src="images/aasman.png" alt="Weather App" data-tilt></a>
-        </div>
-        <div class="project-details">
-          <h3>Weather App</h3>
-          </div>
-      </div>
-      <div class="project">
-        <div class="project-image" data-tilt-glare data-tilt-max-glare="0.8">
-          <a href="" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img src="images/video_summary.png" alt="Video Summarizer" data-tilt></a>
-        </div>
-        <div class="project-details">
-          <h3>Video Summarizer</h3>
-          </div>
-      </div>
-      <div class="project">
-        <div class="project-image" >
-          <a href="https://github.com/Abhayp01/PhotoMemory" class="btn btn-primary" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img src="images/photo_memory.png" alt="Photo Memory" data-tilt></a>
-        </div>
-        <div class="project-details">
-          <h3>Photo Memory</h3>
-          </div>
-      </div>
-    </div>
-  </section>
-  
 
-  <section id="skill" class="skills-section">
-    <h2 class="section-heading">Skills</h2>
-    <div class="skills-container">
-      <div class="skill-category">
-        <h3>Programming Languages</h3>
-        <div class="skill-items">
-          <div class="skill-item" data-tilt>
-            <img src="images/c++.png" alt="C++">
-            <p>C++</p>
+          <div class="col-lg-6 mb-4">
+            <div class="card project-card" data-tilt>
+              <img src="images/video_summary.png" class="card-img-top" alt="Video Summarizer">
+              <div class="card-body">
+                <h3 class="card-title">Video Summarizer</h3>
+                <a href="https://github.com/Abhayp01/VideoSummarizer" class="btn btn-sm btn-outline-accent" target="_blank">View on GitHub</a>
+              </div>
+            </div>
           </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/csharp.png" alt="C#">
-            <p>C#</p>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card project-card" data-tilt>
+              <img src="images/photo_memory.png" class="card-img-top" alt="Photo Memory">
+              <div class="card-body">
+                <h3 class="card-title">Photo Memory</h3>
+                <a href="https://github.com/Abhayp01/PhotoMemory" class="btn btn-sm btn-outline-accent" target="_blank">View on GitHub</a>
+              </div>
+            </div>
           </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/Python-logo-notext.svg.png" alt="Python">
-            <p>Python</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-heading">Recent Posts</h2>
+        <div class="row">
+          
+          <div class="col-lg-6 mb-4">
+            <div class="card blog-preview-card" data-tilt>
+              <img src="images/photo_memory.png" class="card-img-top" alt="Blog Post Preview">
+              <div class="card-body">
+                <p class="blog-date">November 16, 2025</p>
+                <h3 class="card-title">My First Blog Post</h3>
+                <p class="card-text">A quick introduction to my new blog, what I plan to write about, and my journey into .NET and C#.</p>
+                <a href="blogs/my-first-post.html" class="btn btn-sm btn-outline-accent">Read More</a>
+              </div>
+            </div>
           </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/javascript.png" alt="JavaScript">
-            <p>JavaScript</p>
+          
+          <div class="col-lg-6 mb-4">
+            <div class="card blog-preview-card" data-tilt>
+              <img src="images/video_summary.png" class="card-img-top" alt="Blog Post Preview">
+              <div class="card-body">
+                <p class="blog-date">November 10, 2025</p>
+                <h3 class="card-title">Understanding .NET C#</h3>
+                <p class="card-text">Diving deep into the .NET framework and why C# is a powerful language for modern applications.</p>
+                <a href="#" class="btn btn-sm btn-outline-accent disabled">Coming Soon</a>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="skill" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skill-category">
+          <h3 class="skill-category-heading">Programming Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item card" data-tilt>
+              <img src="images/c++.png" alt="C++">
+              <p>C++</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/csharp.png" alt="C#">
+              <p>C#</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/Python-logo-notext.svg.png" alt="Python">
+              <p>Python</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/javascript.png" alt="JavaScript">
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-heading">Technologies & Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-item card" data-tilt>
+              <img src="images/dotnet.png" alt=".NET">
+              <p>.NET</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/reactimg.png" alt="React">
+              <p>React</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/nextjs.png" alt="Next.js">
+              <p>Next.js</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img id="mongo" src="images/mongodb.png" alt="MongoDB">
+              <p>MongoDB</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/Node.js_logo.svg" alt="Node.js">
+              <p>Node.js</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/sql.png" alt="SQL">
+              <p>SQL</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/jetpack.png" alt="Jetpack Compose">
+              <p>Jetpack Compose</p>
+            </div>
+            <div class="skill-item card" data-tilt>
+              <img src="images/kotlin.png" alt="Kotlin">
+              <p>Kotlin</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="skill-category">
-        <h3>Technologies & Frameworks</h3>
-        <div class="skill-items">
-          <div class="skill-item" data-tilt>
-            <img src="images/dotnet.png" alt=".NET">
-            <p>.NET</p>
+    </section>
+
+    <section id="profiles" class="portfolio-section">
+      <h2 class="section-heading">Coding Profiles</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <a href="https://leetcode.com/Abhay01/" target="_blank" class="card profile-card text-center" data-tilt>
+              <img src="images/leetcode.png" alt="LeetCode">
+              <p>LeetCode</p>
+            </a>
           </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/reactimg.png" alt="React">
-            <p>React</p>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <a href="https://www.geeksforgeeks.org/user/prajapatiabhay2003/" target="_blank" class="card profile-card text-center" data-tilt>
+              <img src="images/gfg.png" alt="GeeksforGeeks">
+              <p>GeeksforGeeks</p>
+            </a>
           </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/nextjs.png" alt="Next.js">
-            <p>Next.js</p>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <a href="https://www.codechef.com/users/abhayp01" target="_blank" class="card profile-card text-center" data-tilt>
+              <img src="images/codechef.jfif" alt="CodeChef">
+              <p>CodeChef</p>
+            </a>
           </div>
-          <div class="skill-item" data-tilt>
-            <img id="mongo" src="images/mongodb.png" alt="MongoDB">
-            <p>MongoDB</p>
+          <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <a href="https://www.hackerrank.com/profile/prajapatiabhay21" target="_blank" class="card profile-card text-center" data-tilt>
+              <img src="images/hackerrank.png" alt="HackerRank">
+              <p>HackerRank</p>
+            </a>
           </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/Node.js_logo.svg" alt="Node.js">
-            <p>Node.js</p>
-          </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/sql.png" alt="SQL">
-            <p>SQL</p>
-          </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/jetpack.png" alt="Jetpack Compose">
-            <p>Jetpack Compose</p>
-          </div>
-          <div class="skill-item" data-tilt>
-            <img src="images/kotlin.png" alt="Kotlin">
-            <p>Kotlin</p>
-          </div>
+
         </div>
       </div>
-    </div>
-  </section>
-  <section id="coding-profiles" class="coding-profiles-section">
-    <h2 class="section-heading">Coding Profiles</h2>
-    <div class="profiles-container">
-      <a href="https://leetcode.com/Abhay01/" target="_blank" class="profile-item" data-tilt>
-        <img src="images/leetcode.png" alt="LeetCode">
-        <p>LeetCode</p>
-      </a>
-      <a href="https://www.geeksforgeeks.org/user/prajapatiabhay2003/" target="_blank" class="profile-item" data-tilt>
-        <img src="images/gfg.png" alt="GeeksforGeeks">
-        <p>GeeksforGeeks</p>
-      </a>
-      <a href="https://www.codechef.com/users/abhayp01" target="_blank" class="profile-item" data-tilt>
-        <img src="images/codechef.jfif" alt="CodeChef">
-        <p>CodeChef</p>
-      </a>
-      <a href="https://www.hackerrank.com/profile/prajapatiabhay21" target="_blank" class="profile-item" data-tilt>
-        <img src="images/hackerrank.png" alt="HackerRank">
-        <p>HackerRank</p>
-      </a>
-    </div>
-  </section>
- <footer class="white-section" id="footer">
+    </section>
+  </main>
+
+  <footer class="white-section" id="footer">
     <div class="container text-center py-5">
       <div class="social-links mb-3">
         <a href="https://www.linkedin.com/in/abhay-prajapati-1b43a322a/" class="social-icon mx-2" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
         <a href="https://github.com/Abhayp01" class="social-icon mx-2" target="_blank"><i class="fab fa-github fa-2x"></i></a>
         <a href="mailto:prajapatiabhay2003@gmail.com" class="social-icon mx-2"><i class="fas fa-envelope fa-2x"></i></a>
       </div>
-      <p class="footer-text">© Copyright 2024 Abhay Prajapati</p>
+      <p class="footer-text">© Copyright 2025 <span href="admin.html" class="hidden-link">Abhay Prajapati</span></p>
     </div>
   </footer>
 
@@ -220,6 +266,7 @@
     crossorigin="anonymous"></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  
   <script src="code.js"></script>
 </body>
 </html>

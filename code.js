@@ -1,17 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const name = "Abhay Prajapati."; 
+  // Array of phrases to cycle through
+  const phrases = [
+    "Abhay Prajapati.",
+    "Software Engineer 1.",
+    "Working with .NET C#.",
+    "Full-Stack Developer."
+  ];
+  let phraseIndex = 0;
   const typedName = document.getElementById("typed-name");
   const cursor = document.getElementById("cursor");
-  const typingSpeed = 150; 
-  const eraseSpeed = 50; 
-  const pauseDuration = 1500; 
+  const typingSpeed = 100; // Adjusted for a slightly faster, snappier effect
+  const eraseSpeed = 50;
+  const pauseDuration = 1500;
 
   function typeText() {
+    const currentPhrase = phrases[phraseIndex];
     let currentIndex = 0;
 
     function typeNextCharacter() {
-      if (currentIndex < name.length) {
-        typedName.textContent += name[currentIndex];
+      if (currentIndex < currentPhrase.length) {
+        typedName.textContent += currentPhrase[currentIndex];
         currentIndex++;
         setTimeout(typeNextCharacter, typingSpeed);
       } else {
@@ -31,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         currentIndex--;
         setTimeout(eraseNextCharacter, eraseSpeed);
       } else {
+        // Move to the next phrase
+        phraseIndex = (phraseIndex + 1) % phrases.length;
         setTimeout(typeText, typingSpeed);
       }
     }
@@ -541,4 +551,3 @@ if (typeof document !== "undefined") {
    */
   VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
 }
-
